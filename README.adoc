@@ -1,31 +1,40 @@
-= Servicepoller
+= Kry Code Assignment
+As a part of scaling the number of services running within a modern health
+tech company we need a way to make sure that all are running smoothly.
+None of the tools that we have been looking for are quite doing the right
+thing for us so we decided that we need to build it ourselves. What we
+want you to do is to build a simple service poller that keeps a list of
+services (defined by a URL), and periodically does a HTTP GET to each and
+saves the response ("OK" or "FAIL"). Apart from the polling logic we want to
+have all the services visualised and easily managed in a basic UI presenting
+the all services together with their status.
 
-image:https://img.shields.io/badge/vert.x-4.0.0-purple.svg[link="https://vertx.io"]
+==Features
+A user need to be able to add a new service with url, a name
+Added services have to be kept when the server is restarted
+Present whenever a service was added and when the last change was made
+Full create/update/delete functionality for services
+Informative and nice looking animations on add/remove services
+Protect the poller from misbehaving services (for example answering really slowly)
+URL Validation ("sdgf" is probably not a valid service)
 
-This application was generated using http://start.vertx.io
+== Running the application
 
-== Building
-
-To launch your tests:
+Import the repo to Intellij:
 ```
-./gradlew clean test
+Run Driver class
 ```
 
-To package your application:
+Navigate to :
 ```
-./gradlew clean assemble
-```
-
-To run your application:
-```
-./gradlew clean run
+src/main/fronend
 ```
 
-== Help
+Execute:
+```
+npm install
+npm start
+```
 
-* https://vertx.io/docs/[Vert.x Documentation]
-* https://stackoverflow.com/questions/tagged/vert.x?sort=newest&pageSize=15[Vert.x Stack Overflow]
-* https://groups.google.com/forum/?fromgroups#!forum/vertx[Vert.x User Group]
-* https://gitter.im/eclipse-vertx/vertx-users[Vert.x Gitter]
 
 
