@@ -9,14 +9,14 @@ saves the response ("OK" or "FAIL"). Apart from the polling logic we want to
 have all the services visualised and easily managed in a basic UI presenting
 the all services together with their status.
 
-==Features
-A user need to be able to add a new service with url, a name
-Added services have to be kept when the server is restarted
-Present whenever a service was added and when the last change was made
-Full create/update/delete functionality for services
-Informative and nice looking animations on add/remove services
-Protect the poller from misbehaving services (for example answering really slowly)
-URL Validation ("sdgf" is probably not a valid service)
+== Features
+- A user need to be able to add a new service with url, a name
+- Added services have to be kept when the server is restarted
+- Present whenever a service was added and when the last change was made
+- Full create/update/delete functionality for services
+- Informative and nice looking animations on add/remove services
+- Protect the poller from misbehaving services (for example answering really slowly)
+- URL Validation ("sdgf" is probably not a valid service)
 
 == Running the application
 
